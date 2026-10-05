@@ -1,3 +1,3 @@
-// Paste the live Stripe Payment Link URL here before publishing the page.
-window.LAYZ_SUPPORT_URL = "YOUR_STRIPE_LINK";
+// Ko-fi handles the support checkout for LayZ.
+window.LAYZ_SUPPORT_URL = "https://ko-fi.com/kawprincess";
 
