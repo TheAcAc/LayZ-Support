@@ -6,14 +6,13 @@ The intended GitHub Pages URL is <https://theacac.github.io/LayZ-Support/>.
 
 ## Before enabling checkout
 
-1. Create a Stripe Payment Link for voluntary, one-time support.
-2. Replace `YOUR_STRIPE_LINK` in `config.js` with the real `https://buy.stripe.com/...` URL.
-3. Add a support email address to the payment-help FAQ in `index.html`.
-4. Confirm the wording and Stripe account details match the actual offering and your local requirements.
+1. The page currently links to `https://ko-fi.com/kawprincess`; manage payment settings through Ko-fi.
+2. Add a support email address to the payment-help FAQ in `index.html`.
+3. Confirm the wording and payment settings match the actual offering and your local requirements.
 
 GitHub Pages is configured to deploy from the `main` branch root. Changes pushed to `main` will publish automatically.
 
-Without a configured Stripe URL, the page keeps checkout disabled and says that the link is being set up.
+The Ko-fi link opens in a new tab. GitHub Pages publishes changes pushed to `main` automatically.
 
 ## Local preview
 
