@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11120f">
+    <meta name="description" content="Support the continued development and maintenance of LayZ by Princess, a Windows companion for Kingdoms at War in BlueStacks.">
+    <title>Support LayZ by Princess</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="LayZ by Princess home"><span class="brand-mark">L</span><span>LayZ <span class="muted">by Princess</span></span></a>
+        <a class="nav-link" href="https://github.com/TheAcAc/LayZ-Releases/releases">View releases <span aria-hidden="true">↗</span></a>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> MADE FOR THE KAW COMMUNITY</p>
+          <h1>Good tools take<br><span>time to build.</span></h1>
+          <p class="intro">LayZ is a Windows companion for Kingdoms at War in BlueStacks. If it’s useful to you, you can help support the time that goes into improving and maintaining it.</p>
+          <a class="button" id="support-button" href="#support" aria-describedby="support-note">Support LayZ <span aria-hidden="true">↗</span></a>
+          <p class="button-note" id="support-note">One-time, voluntary support. No subscription.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="core"><span>L</span></div>
+          <span class="spark spark-one">✳</span><span class="spark spark-two">✦</span><span class="spark spark-three">·</span>
+          <span class="art-label">BUILT WITH CARE<br><b>UPDATED OVER TIME</b></span>
+        </div>
+      </section>
+
+      <section class="support" id="support">
+        <div class="section-kicker">WHY SUPPORT?</div>
+        <div class="support-grid">
+          <h2>Help keep<br>LayZ moving.</h2>
+          <div class="support-copy">
+            <p>Your contribution helps support ongoing development, maintenance, and the work behind future improvements.</p>
+            <p>Support is entirely optional. It doesn’t buy in-game currency or change access to the private releases repository.</p>
+          </div>
+        </div>
+        <div class="promise-row">
+          <div><span class="promise-icon">↗</span><span><b>Optional by choice</b><small>Use LayZ without contributing.</small></span></div>
+          <div><span class="promise-icon">♡</span><span><b>Directly supports the project</b><small>Every contribution is appreciated.</small></span></div>
+          <div><span class="promise-icon">⌁</span><span><b>Secure checkout</b><small>Payments will be handled by Stripe.</small></span></div>
+        </div>
+      </section>
+
+      <section class="checkout" aria-label="Support checkout">
+        <div><p class="eyebrow">THANK YOU FOR BEING HERE</p><h2>Every bit helps.</h2><p class="checkout-copy">Choose an amount that feels right for you. There’s no pressure to contribute.</p></div>
+        <div class="checkout-action"><a class="button button-light" id="checkout-button" href="#support" aria-disabled="true">Stripe link coming soon</a><small id="checkout-status">The secure checkout link is being set up.</small></div>
+      </section>
+
+      <section class="faq">
+        <p class="section-kicker">A FEW QUICK ANSWERS</p>
+        <details><summary>Is contributing required to use LayZ?</summary><p>No. Contributions are optional and do not change access to LayZ releases.</p></details>
+        <details><summary>What does my contribution support?</summary><p>It supports the ongoing development and maintenance of LayZ by Princess.</p></details>
+        <details><summary>Is this an in-game purchase?</summary><p>No. This page is not affiliated with Kingdoms at War or its publisher. It does not sell game currency, items, or account services.</p></details>
+        <details><summary>Need help with a payment?</summary><p>Contact the project maintainer at <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a> and include the date and amount. Please don’t send card details by email.</p></details>
+      </section>
+
+      <footer><a class="brand" href="#top"><span class="brand-mark">L</span><span>LayZ <span class="muted">by Princess</span></span></a><p>Independent community software. Not affiliated with or endorsed by Kingdoms at War.</p><a href="https://github.com/TheAcAc/LayZ-Releases/releases">Releases ↗</a></footer>
+    </main>
+    <script src="config.js"></script>
+    <script>
+      const paymentUrl = window.LAYZ_SUPPORT_URL;
+      if (paymentUrl && /^https:\/\//.test(paymentUrl) && !paymentUrl.includes("YOUR_STRIPE_LINK")) {
+        for (const id of ["support-button", "checkout-button"]) {
+          const button = document.getElementById(id);
+          button.href = paymentUrl;
+          button.target = "_blank";
+          button.rel = "noopener noreferrer";
+        }
+        document.getElementById("checkout-button").textContent = "Continue to secure checkout";
+        document.getElementById("checkout-button").removeAttribute("aria-disabled");
+        document.getElementById("checkout-status").textContent = "Stripe securely processes the payment.";
+      } else {
+        document.getElementById("support-button").href = "#support";
+      }
+    </script>
+  </body>
+</html>
+
