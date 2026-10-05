@@ -63,22 +63,17 @@
 
       <footer><a class="brand" href="#top"><span class="brand-mark">L</span><span>LayZ <span class="muted">by Princess</span></span></a><p>Independent community software. Not affiliated with or endorsed by Kingdoms at War.</p><a href="https://github.com/TheAcAc/LayZ-Releases/releases">Releases ↗</a></footer>
     </main>
-    <script src="config.js?v=2"></script>
     <script>
-      const paymentUrl = window.LAYZ_SUPPORT_URL;
-      if (paymentUrl && /^https:\/\//.test(paymentUrl) && !paymentUrl.includes("YOUR_STRIPE_LINK")) {
-        for (const id of ["support-button", "checkout-button"]) {
-          const button = document.getElementById(id);
-          button.href = paymentUrl;
-          button.target = "_blank";
-          button.rel = "noopener noreferrer";
-        }
-        document.getElementById("checkout-button").textContent = "Continue to Ko-fi";
-        document.getElementById("checkout-button").removeAttribute("aria-disabled");
-        document.getElementById("checkout-status").textContent = "You’ll complete your support on Ko-fi.";
-      } else {
-        document.getElementById("support-button").href = "#support";
+      const paymentUrl = "https://ko-fi.com/kawprincess";
+      for (const id of ["support-button", "checkout-button"]) {
+        const button = document.getElementById(id);
+        button.href = paymentUrl;
+        button.target = "_blank";
+        button.rel = "noopener noreferrer";
       }
+      document.getElementById("checkout-button").textContent = "Continue to Ko-fi";
+      document.getElementById("checkout-button").removeAttribute("aria-disabled");
+      document.getElementById("checkout-status").textContent = "You’ll complete your support on Ko-fi.";
     </script>
   </body>
 </html>

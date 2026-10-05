@@ -6,13 +6,13 @@ The intended GitHub Pages URL is <https://theacac.github.io/LayZ-Support/>.
 
 ## Before enabling checkout
 
-1. The page currently links to `https://ko-fi.com/kawprincess`; manage payment settings through Ko-fi.
+1. The page links to `https://ko-fi.com/kawprincess`; manage payment settings through Ko-fi.
 2. Add a support email address to the payment-help FAQ in `index.html`.
 3. Confirm the wording and payment settings match the actual offering and your local requirements.
 
 GitHub Pages is configured to deploy from the `main` branch root. Changes pushed to `main` will publish automatically.
 
-The Ko-fi link opens in a new tab. GitHub Pages publishes changes pushed to `main` automatically.
+The Ko-fi link opens in a new tab. Update its URL in the page’s inline script if it changes.
 
 ## Local preview
 
