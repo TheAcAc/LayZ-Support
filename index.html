@@ -21,7 +21,7 @@
           <h1>Good tools take<br><span>time to build.</span></h1>
           <p class="intro">LayZ is a Windows companion for Kingdoms at War in BlueStacks. If it’s useful to you, you can help support the time that goes into improving and maintaining it.</p>
           <a class="button" id="support-button" href="#support" aria-describedby="support-note">Support LayZ <span aria-hidden="true">↗</span></a>
-          <p class="button-note" id="support-note">One-time, voluntary support. No subscription.</p>
+          <p class="button-note" id="support-note">Voluntary support through Ko-fi.</p>
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="orbit orbit-one"></div>
@@ -44,13 +44,13 @@
         <div class="promise-row">
           <div><span class="promise-icon">↗</span><span><b>Optional by choice</b><small>Use LayZ without contributing.</small></span></div>
           <div><span class="promise-icon">♡</span><span><b>Directly supports the project</b><small>Every contribution is appreciated.</small></span></div>
-          <div><span class="promise-icon">⌁</span><span><b>Secure checkout</b><small>Payments will be handled by Stripe.</small></span></div>
+          <div><span class="promise-icon">⌁</span><span><b>Ko-fi checkout</b><small>Support through your Ko-fi page.</small></span></div>
         </div>
       </section>
 
       <section class="checkout" aria-label="Support checkout">
         <div><p class="eyebrow">THANK YOU FOR BEING HERE</p><h2>Every bit helps.</h2><p class="checkout-copy">Choose an amount that feels right for you. There’s no pressure to contribute.</p></div>
-        <div class="checkout-action"><a class="button button-light" id="checkout-button" href="#support" aria-disabled="true">Stripe link coming soon</a><small id="checkout-status">The secure checkout link is being set up.</small></div>
+        <div class="checkout-action"><a class="button button-light" id="checkout-button" href="#support" aria-disabled="true">Continue to Ko-fi</a><small id="checkout-status">You’ll complete your support on Ko-fi.</small></div>
       </section>
 
       <section class="faq">
@@ -73,9 +73,9 @@
           button.target = "_blank";
           button.rel = "noopener noreferrer";
         }
-        document.getElementById("checkout-button").textContent = "Continue to secure checkout";
+        document.getElementById("checkout-button").textContent = "Continue to Ko-fi";
         document.getElementById("checkout-button").removeAttribute("aria-disabled");
-        document.getElementById("checkout-status").textContent = "Stripe securely processes the payment.";
+        document.getElementById("checkout-status").textContent = "You’ll complete your support on Ko-fi.";
       } else {
         document.getElementById("support-button").href = "#support";
       }
