@@ -1,20 +1,9 @@
-# LayZ Support landing page
+# LayZ & LayZDroid support homepage
 
-Static GitHub Pages site for the LayZ by Princess project. It is intentionally separate from the private releases repository so the project details can be publicly reviewed during payment-provider account setup.
+Static GitHub Pages product hub for LayZ and LayZDroid, with release links and optional development support through https://ko-fi.com/kawprincess.
 
-The intended GitHub Pages URL is <https://theacac.github.io/LayZ-Support/>.
+Live page: https://theacac.github.io/LayZ-Support/
 
-## Before enabling checkout
+GitHub Pages deploys from the root of the `main` branch. Open `index.html` locally to preview; no build step or dependencies are needed.
 
-1. The page links to `https://ko-fi.com/kawprincess`; manage payment settings through Ko-fi.
-2. Add a support email address to the payment-help FAQ in `index.html`.
-3. Confirm the wording and payment settings match the actual offering and your local requirements.
-
-GitHub Pages is configured to deploy from the `main` branch root. Changes pushed to `main` will publish automatically.
-
-The Ko-fi link opens in a new tab. Update its URL in the page’s inline script if it changes.
-
-## Local preview
-
-Open `index.html` directly in a browser. No build step or dependencies are needed.
-
+LayZDroid is clearly labelled as an early preview. Hardware performance claims should only be added after measurements. Donation links do not change product access.

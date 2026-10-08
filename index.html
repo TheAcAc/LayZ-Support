@@ -1,80 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#11120f">
-    <meta name="description" content="Support the continued development and maintenance of LayZ by Princess, a Windows companion for Kingdoms at War in BlueStacks.">
-    <title>Support LayZ by Princess</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <main>
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#top" aria-label="LayZ by Princess home"><span class="brand-mark">L</span><span>LayZ <span class="muted">by Princess</span></span></a>
-        <a class="nav-link" href="https://github.com/TheAcAc/LayZ-Releases/releases">View releases <span aria-hidden="true">↗</span></a>
-      </nav>
-
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> MADE FOR THE KAW COMMUNITY</p>
-          <h1>Good tools take<br><span>time to build.</span></h1>
-          <p class="intro">LayZ is a Windows companion for Kingdoms at War in BlueStacks. If it’s useful to you, you can help support the time that goes into improving and maintaining it.</p>
-          <a class="button" id="support-button" href="#support" aria-describedby="support-note">Support LayZ <span aria-hidden="true">↗</span></a>
-          <p class="button-note" id="support-note">Voluntary support through Ko-fi.</p>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="core"><span>L</span></div>
-          <span class="spark spark-one">✳</span><span class="spark spark-two">✦</span><span class="spark spark-three">·</span>
-          <span class="art-label">BUILT WITH CARE<br><b>UPDATED OVER TIME</b></span>
-        </div>
-      </section>
-
-      <section class="support" id="support">
-        <div class="section-kicker">WHY SUPPORT?</div>
-        <div class="support-grid">
-          <h2>Help keep<br>LayZ moving.</h2>
-          <div class="support-copy">
-            <p>Your contribution helps support ongoing development, maintenance, and the work behind future improvements.</p>
-            <p>Support is entirely optional. It doesn’t buy in-game currency or change access to the private releases repository.</p>
-          </div>
-        </div>
-        <div class="promise-row">
-          <div><span class="promise-icon">↗</span><span><b>Optional by choice</b><small>Use LayZ without contributing.</small></span></div>
-          <div><span class="promise-icon">♡</span><span><b>Directly supports the project</b><small>Every contribution is appreciated.</small></span></div>
-          <div><span class="promise-icon">⌁</span><span><b>Ko-fi checkout</b><small>Support through your Ko-fi page.</small></span></div>
-        </div>
-      </section>
-
-      <section class="checkout" aria-label="Support checkout">
-        <div><p class="eyebrow">THANK YOU FOR BEING HERE</p><h2>Every bit helps.</h2><p class="checkout-copy">Choose an amount that feels right for you. There’s no pressure to contribute.</p></div>
-        <div class="checkout-action"><a class="button button-light" id="checkout-button" href="#support" aria-disabled="true">Continue to Ko-fi</a><small id="checkout-status">You’ll complete your support on Ko-fi.</small></div>
-      </section>
-
-      <section class="faq">
-        <p class="section-kicker">A FEW QUICK ANSWERS</p>
-        <details><summary>Is contributing required to use LayZ?</summary><p>No. Contributions are optional and do not change access to LayZ releases.</p></details>
-        <details><summary>What does my contribution support?</summary><p>It supports the ongoing development and maintenance of LayZ by Princess.</p></details>
-        <details><summary>Is this an in-game purchase?</summary><p>No. This page is not affiliated with Kingdoms at War or its publisher. It does not sell game currency, items, or account services.</p></details>
-        <details><summary>Need help with a payment?</summary><p>A support contact address will be published here before checkout is activated. Please don’t send card details by email.</p></details>
-      </section>
-
-      <footer><a class="brand" href="#top"><span class="brand-mark">L</span><span>LayZ <span class="muted">by Princess</span></span></a><p>Independent community software. Not affiliated with or endorsed by Kingdoms at War.</p><a href="https://github.com/TheAcAc/LayZ-Releases/releases">Releases ↗</a></footer>
-    </main>
-    <script>
-      const paymentUrl = "https://ko-fi.com/kawprincess";
-      for (const id of ["support-button", "checkout-button"]) {
-        const button = document.getElementById(id);
-        button.href = paymentUrl;
-        button.target = "_blank";
-        button.rel = "noopener noreferrer";
-      }
-      document.getElementById("checkout-button").textContent = "Continue to Ko-fi";
-      document.getElementById("checkout-button").removeAttribute("aria-disabled");
-      document.getElementById("checkout-status").textContent = "You’ll complete your support on Ko-fi.";
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="Explore LayZ battle automation and the LayZDroid Android launcher for KaW. Get downloads and support ongoing development through optional Ko-fi tips.">
+  <title>LayZ &amp; LayZDroid — Tools for the KaW community</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="support-page">
+<div class="site">
+      <nav><a class="brand" href="#hub-top"><span class="mark">L</span>LayZ <span class="quiet">&amp; LayZDroid</span></a><div class="links"><a href="#hub-products">Our tools</a><a href="#hub-support">Leave a tip ↗</a></div></nav>
+      <header class="hero" id="hub-top"><p class="eyebrow">Independent tools for the KaW community</p><h1>Two tools.<br>One less thing to worry about.</h1><p class="intro">LayZ handles your battle automation. LayZDroid gives it a focused Android home. Built for the KaW community, improved with your feedback.</p><div class="actions"><a class="action" href="#hub-products">Explore the tools ↓</a><a class="action secondary" href="https://ko-fi.com/kawprincess" target="_blank" rel="noopener noreferrer">Support development ↗</a></div></header>
+      <div class="products" id="hub-products">
+        <article class="product"><span class="tag">The automation companion</span><h3>LayZ</h3><p>Manage Epic Battles, PvP and your connected instances from one Windows dashboard.</p><ul><li>Battle controls for each instance</li><li>Recovery and activity monitoring</li><li>Works with BlueStacks and LayZDroid</li></ul><a class="action secondary" href="https://github.com/TheAcAc/LayZ-Releases/releases" target="_blank" rel="noopener noreferrer">View LayZ releases ↗</a></article>
+        <article class="product"><span class="tag">The focused Android launcher <span class="badge">Preview</span></span><h3>LayZDroid</h3><p>A leaner approach to running KaW, with fresh Android instances and adjustable resources.</p><ul><li>No launcher ads or bundled app store</li><li>One core and 1024 MB guest defaults</li><li>Open source under MIT</li></ul><a class="action" href="https://github.com/TheAcAc/LayZDroid/releases/tag/v0.1.0-preview.1" target="_blank" rel="noopener noreferrer">Try LayZDroid ↗</a><p style="margin:14px 0 0;font-size:12px">Early preview. Performance on weak PCs is still being tested.</p></article>
+      </div>
+      <section class="tip" id="hub-support"><div><h2>Useful tools? Buy me a beer.</h2><p>A little tip helps keep both projects moving. Contributions are optional and never unlock access.</p></div><a class="action" href="https://ko-fi.com/kawprincess" target="_blank" rel="noopener noreferrer">Leave a tip on Ko-fi ↗</a></section>
+      <footer><span>Windows 10/11 · Community software</span><span>Independent of Kingdoms at War and its publisher.</span></footer>
+    </div>
+</main>
+</body>
 </html>
-
